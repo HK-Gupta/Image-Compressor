@@ -28,7 +28,7 @@
                     android:layout_height="match_parent"
                     android:orientation="vertical"
                     android:layout_weight="1"
-                    android:layout_margin="7dp"
+                    android:layout_margin="4dp"
                     android:background="@drawable/border_main"
                     android:padding="4dp">
 
@@ -36,6 +36,7 @@
                         android:id="@+id/img_original"
                         android:layout_width="match_parent"
                         android:layout_height="300dp"
+                        android:background="@drawable/question_icon"
                         android:scaleType="centerCrop"/>
                     
                     <TextView
@@ -53,7 +54,7 @@
                     android:layout_height="match_parent"
                     android:orientation="vertical"
                     android:layout_weight="1"
-                    android:layout_margin="7dp"
+                    android:layout_margin="4dp"
                     android:background="@drawable/border_main"
                     android:padding="4dp">
 
@@ -61,7 +62,8 @@
                         android:id="@+id/img_compressed"
                         android:layout_width="match_parent"
                         android:layout_height="300dp"
-                        android:scaleType="centerCrop"/>
+                        android:scaleType="centerCrop"
+                        android:background="@drawable/question_icon"/>
 
                     <TextView
                         android:id="@+id/txt_compressed"
@@ -132,14 +134,18 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Select An Image"
-                android:layout_margin="18dp"/>
+                android:background="@drawable/button_design"
+                android:layout_margin="18dp"
+                android:textColor="@color/white"/>
             <Button
                 android:id="@+id/btn_compress"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Compress Image"
                 android:layout_margin="18dp"
-                android:visibility="invisible"/>
+                android:background="@drawable/button_design"
+                android:visibility="invisible"
+                android:textColor="@color/white"/>
 
         </LinearLayout>
     </ScrollView>
